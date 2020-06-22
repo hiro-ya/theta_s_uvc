@@ -97,6 +97,13 @@ Image size: 1280x720
 Frame rate: 15fps
 ```  
 
+## Build
+
+```
+cd ~/your/colcon_ws
+git clone -b develop https://github.com/hiro-ya/theta_s_uvc.git src/theta_s_uvc
+colcon build
+```
 
 ## Usage
 
@@ -104,6 +111,18 @@ Frame rate: 15fps
 https://theta360.com/ja/support/manual/s/content/streaming/streaming_01.html
 2. Connect your ricoh theta s to your PC usb port
 3. Launch
+
+<details><summary>Build from source</summary>
+<p>
+
+```
+cd ~/your/colcon_ws
+source install/setup.bash
+```
+
+</p>
+</details>
+
 ```
 roslaunch theta_s_uvc theta_s_uvc_start.launch device:=/dev/video0
 ```
