@@ -102,6 +102,8 @@ Frame rate: 15fps
 ```
 cd ~/your/colcon_ws
 git clone -b develop https://github.com/hiro-ya/theta_s_uvc.git src/theta_s_uvc
+rosdep update
+rosdep install -i --from-paths src
 colcon build
 ```
 
